@@ -5,7 +5,7 @@
 
 	<groupId>com.bhaiti.kela</groupId>
 	<artifactId>spring-boot-rest-2</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<packaging>jar</packaging>
 
 	<name>spring-boot-rest-2</name>
@@ -65,8 +65,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-		</plugins>
-		<plugin>
+                        <plugin>
 
         <groupId>org.codehaus.mojo</groupId>
 
@@ -99,6 +98,7 @@
         </executions>
 
       </plugin>
+		</plugins>
 		<resources>
 	        <resource>	
 	            <directory>src/main/resources</directory>	
