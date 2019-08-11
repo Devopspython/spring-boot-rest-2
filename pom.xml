@@ -106,6 +106,25 @@
 	        </resource>
         </resources>
 	</build>
+     <distributionManagement>
+
+    <snapshotRepository>
+
+      <id>nexus-snapshots</id>
+
+      <url>http://192.168.56.99:8081/repository/maven-hosted-snapshot/</url>
+
+    </snapshotRepository>
+
+    <repository>
+
+      <id>net.apmoller.crb.devops.releases</id>
+
+      <url>http://192.168.56.99:8081/repository/maven-hosted-releaseversions/</url>
+
+    </repository>
+
+  </distributionManagement>
 
 	<repositories>
 		<repository>
