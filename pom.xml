@@ -66,6 +66,39 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<plugin>
+
+        <groupId>org.codehaus.mojo</groupId>
+
+        <artifactId>build-helper-maven-plugin</artifactId>
+
+        <version>3.0.0</version>
+
+		 <configuration>
+
+         <name>newversion.timestamp</name>
+
+         <pattern>yyyy.MM.dd.HH.mm.ss</pattern>
+
+         </configuration>
+
+        <executions>
+
+          <execution>
+
+            <id>parse-version</id>
+
+            <goals>
+
+              <goal>parse-version</goal>
+
+            </goals>
+
+          </execution>
+
+        </executions>
+
+      </plugin>
 		<resources>
 	        <resource>	
 	            <directory>src/main/resources</directory>	
